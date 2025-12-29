@@ -1,0 +1,54 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Input</title>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body>
+
+  <form id="simpleForm" class="page-form" action="/generate" method="POST">    
+    <div class="container">
+
+      <!-- Header with image -->
+      <div class="header">
+        <!-- <img src="/images/dodgy.png" alt="Stock Predictor Logo" class="header-image" />  -->
+        <h2>DODGY STOCK PREDICTOR</h2>
+      </div>
+
+      <label for="tickers">Add up to 3 stock tickers below to get a super accurate stock predictions report. 😉</label>
+
+      <div class="input-row">
+        <input
+          id="tickers"
+          name="tickers" 
+          type="text"
+          placeholder="Add your stock tickers here..."
+        />
+        <button type="button" id="addBtn">+</button>
+      </div>
+
+      <!-- Latest added -->
+      <div class="latest-box">
+        <strong>Your added tickers:</strong>
+        <span id="latestValue"><%= latestTickers || "" %></span>
+      </div>
+
+      <!-- Generate Report -->
+      <button type="submit" id="generateBtn" class="generate-btn">
+        Generate Report
+      </button>
+
+      <!-- Output -->
+      <div id="output" class="output-box">
+        <%= reportOutput || "" %>
+      </div>
+
+    </div>
+  </form>
+  <!-- <div id="spinner" class="spinner hidden"></div> -->
+  <!-- <div id="report" class="output-box"></div> -->
+  <script src="/js/script.js"></script>   
+</body>
+</html>

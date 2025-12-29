@@ -1,0 +1,207 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  background-color: #eef;
+  padding: 15px;
+  border-radius: 5px;
+} */
+
+/* =======================================
+   Global Reset and Font
+======================================= */
+* {
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================================
+   Full-page Layout
+======================================= */
+.page-form {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f; /* dark hacker vibe */
+  color: #00ff00; /* neon green text */
+}
+
+/* =======================================
+   Centered Card Container
+======================================= */
+.container {
+  background: #1a1a1a; /* dark card */
+  padding: 32px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 0 15px #00ff00;
+  border: 2px solid #00ff00;
+}
+
+/* =======================================
+   Header Section
+======================================= */
+.header {
+  margin-bottom: 20px;
+}
+
+.header-image {
+  max-width: 180px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 0 5px #00ff00);
+}
+
+h2 {
+  font-size: 22px;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+/* =======================================
+   Input Row
+======================================= */
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #00ff00;
+  border-radius: 6px;
+  background-color: #0f0f0f;
+  color: #00ff00;
+}
+
+input[type="text"]::placeholder {
+  color: #00cc00;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #0f0f0f;
+  color: #00ff00;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: #0f0f0f;
+  transform: scale(1.05);
+}
+
+#addBtn {
+  width: 42px;
+  height: 42px;
+  font-size: 22px;
+}
+
+/* =======================================
+   Latest Added Tickers
+======================================= */
+.latest-box {
+  margin-top: 16px;
+  padding: 10px;
+  background-color: #002200;
+  border: 1px solid #00ff00;
+  border-radius: 6px;
+  color: #00ff00;
+  font-weight: bold;
+}
+
+/* =======================================
+   Generate Report Button
+======================================= */
+.generate-btn {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background-color: #003300;
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #00ff00;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.generate-btn:hover {
+  background-color: #00ff00;
+  color: #0f0f0f;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00ff00;
+}
+
+/* =======================================
+   Output Box
+======================================= */
+.output-box {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #00ff00;
+  border-radius: 6px;
+  min-height: 40px;
+}
+
+/* =======================================
+   Spinner
+======================================= */
+
+/* .hidden {
+  display: none;
+}
+
+.spinner {
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+
+  border: 4px solid #ccc;
+  border-top: 4px solid #4a90e2;
+  border-radius: 50%;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
