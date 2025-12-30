@@ -70,6 +70,6 @@ To generate AI-powered summaries of stock data:
 ## Future Enhancements
  
 - Add a UI spinner component when making OpenAI API calls to indicate loading.
-- Adding caching fails the first call for that ticker to openAI. It works for the cached calls after. Removing cache logic makes this work or we need to add retry logic to this.
+- Adding caching fails the first call for that ticker to openAI. It works for the cached calls after. Removing cache logic makes this work or we need to add retry logic to this. You can also add a cache kill switch either controlling it in the backend directing or using a switch in the UI. 
 - Stress testing needs to be added for the app.
-- Since the app is using OpenAI, make sure to go through best safety practices like advesarial testing, HITL, Moderation API etc. Link provided  -https://platform.openai.com/docs/guides/safety-best-practices
+- Since the app is using OpenAI, make sure to go through best safety practices like advesarial testing, HITL, Moderation API etc. Link provided  -https://platform.openai.com/docs/guides/safety-best-practices- 
